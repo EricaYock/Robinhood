@@ -12,7 +12,7 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #000;
   --link-hover-color: #136ff6;
   --background-color: white;
   --light-color: #eee;
@@ -25,7 +25,7 @@
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
+  --body-font-size-m: 18px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
 
@@ -50,8 +50,8 @@
 
 @media (width >= 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
+    --heading-font-size-xxl: 52px;
+    --heading-font-size-xl: 32px;
     --heading-font-size-l: 36px;
     --heading-font-size-m: 30px;
     --heading-font-size-s: 24px;
@@ -67,6 +67,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  text-align: center;
 }
 
 body.appear {
@@ -80,7 +81,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -192,13 +193,13 @@ main .section {
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 4px 32px;
   }
 }
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+   max-width: 1200px;
     margin: auto;
   }
 }
@@ -207,4 +208,17 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.hero {
+  background-color: rgb(225, 235, 220);
+  text-align: left;
+}
+
+main .section.hero div {
+  max-width: 1600px;
+}
+
+main .section.hero h2 {
+  border-bottom: 1px solid black;
 }
