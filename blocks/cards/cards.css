@@ -11,10 +11,15 @@
   border: 1px solid var(--dark-color);
   background-color: var(--background-color);
   border-radius: 16px;
+  position: relative;
+  width: 322px;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  position: absolute;
+  top: 5%;
+  text-align: left;
 }
 
 .cards .cards-card-image {
@@ -29,5 +34,26 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 16px;
+  height: 540px;
+}
+
+.cards.small > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(522px, 1fr));
+  grid-gap: 16px;
+}
+
+.cards.small > ul > li {
+  width: 580px;
+}
+
+.cards.small > ul > li img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 16px;
+  height: 240px;
 }
