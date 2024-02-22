@@ -213,6 +213,7 @@ main .section.highlight {
 main .section.hero {
   background-color: rgb(225, 235, 220);
   text-align: left;
+  border-bottom: 1px solid black;
 }
 
 main .section.hero div {
